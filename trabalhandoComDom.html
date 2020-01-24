@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Curso de JavaScript</title>
+</head>
+<body>
+  <div id = "app">
+    
+    <input type="text" name="nome" id="nome" class="nome" />
+
+    <button class="botao">Adicionar</button>
+    <br><br>
+
+    <input type="text" name="nome2" />
+
+  </div>
+
+  <script>
+    // Trabalhando com a Dom
+
+    var inputElement1 = document.getElementById('nome');
+    console.log(inputElement1);
+
+    var inputElement2 = document.getElementsByTagName('input')[0];
+    console.log(inputElement2);
+
+    var inputElement3 = document.getElementsByClassName('nome')[0];
+    console.log(inputElement3);
+
+    var inputElement4 = document.querySelector('div#app input[name="nome2"]');
+    console.log(inputElement4);
+
+    var buttonElement = document.querySelector('button.botao');
+    buttonElement.onclick = function(){
+      var text = inputElement1.value;
+      alert(text);
+    }
+    console.log(buttonElement);
+
+  </script>
+
+</body>
+</html>
