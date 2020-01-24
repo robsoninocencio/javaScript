@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Curso de JavaScript</title>
+</head>
+<body>
+  <div id = "app">
+    <button onclick="mostraAlerta('Botão foi clicado')">Me clica</button>
+    <br><br>
+    <button onmouseover="mostraAlerta('Passou o mouse sobre o botão')">Passe o mouse mim</button>
+    <br><br>
+    <input onkeypress= "mostraAlerta('Pressionado')" />
+  </div>
+
+  <script>
+    // Manipulando a Dom - Eventos Inline
+
+    function mostraAlerta(msg) {
+      alert(msg);
+    }
+
+  </script>
+
+</body>
+</html>
